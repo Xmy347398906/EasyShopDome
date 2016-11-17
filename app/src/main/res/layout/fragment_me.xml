@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.administrator.taoex.fragment.MeFragment">
+
+    <LinearLayout
+        android:background="#77e41e"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.administrator.taoex.view.RoundedImageView
+            android:id="@+id/iv_headPortrait"
+            android:background="@drawable/selector_ic_accoun"
+            android:src="@drawable/ic_account_circle_black_true_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:clickable="true"
+            android:text="登录|注册"
+            android:background="@drawable/selector_ic_click"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#90f3f7f5"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_userInfo"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:padding="4dp"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="个人信息"
+            android:drawableRight="@drawable/selector_ic_chevron_right"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:padding="4dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/selector_ic_chevron_right"
+            android:textSize="20sp"
+            android:text="我的商品"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/tv_myCommodity" />
+
+        <TextView
+            android:id="@+id/tv_uploadingCommodity"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:padding="4dp"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/selector_ic_chevron_right"
+            android:textSize="20sp"
+            android:text="上传商品"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+</LinearLayout>
